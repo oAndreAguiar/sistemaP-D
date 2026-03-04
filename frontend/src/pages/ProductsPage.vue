@@ -54,7 +54,6 @@
     </tbody>
   </table>
 
-  <!-- Modal -->
   <div
     v-if="modal.open"
     style="position:fixed; inset:0; background:rgba(0,0,0,.35); display:flex; align-items:center; justify-content:center; padding:16px;"
@@ -106,7 +105,6 @@
       </div>
 
       <div style="display:grid; gap:10px; margin-top:10px;">
-        <!-- ✅ AQUI: troquei GRID por FLEX com classes -->
         <div
           v-for="(c, idx) in form.components"
           :key="idx"
@@ -172,7 +170,7 @@ const rawMaterials = ref([]);
 
 const modal = reactive({
   open: false,
-  mode: "create", // create | edit
+  mode: "create",
   editId: null,
 });
 
@@ -355,7 +353,6 @@ select, input {
   font: inherit;
 }
 
-/* ✅ FIX DEFINITIVO DO "REMOVE BUGADO" */
 .component-row{
   display: flex;
   gap: 10px;
@@ -377,7 +374,7 @@ select, input {
   padding: 8px 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  height: 38px; /* alinha tudo */
+  height: 38px;
 }
 
 .remove-btn{

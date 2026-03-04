@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 @ApplicationScoped
 public class ProductionPlannerService {
 
-    // usado pelo endpoint (busca no DB)
     public ProductionPlanResponse plan() {
         List<Product> products = Product.listAll();
         List<RawMaterial> rawMaterials = RawMaterial.listAll();
@@ -27,7 +26,6 @@ public class ProductionPlannerService {
         return plan(products, stock);
     }
 
-    // método PURO (testável) — não acessa DB
     ProductionPlanResponse plan(List<Product> products, Map<Long, Long> stock) {
         Map<Long, Long> workingStock = new HashMap<>(stock);
 
@@ -58,7 +56,6 @@ public class ProductionPlannerService {
             items.add(item);
         }
 
-        // remaining stock (com base nos insumos presentes na composição dos produtos)
         List<RemainingStockItemResponse> remaining = products.stream()
                 .flatMap(p -> p.components.stream())
                 .map(pc -> pc.rawMaterial)
