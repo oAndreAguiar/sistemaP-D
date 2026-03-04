@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "rawMaterials": "Raw Materials",
+    "products": "Products",
+    "productionPlan": "Production Plan"
+  },
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "actions": "Actions"
+  },
+  "tables": {
+    "id": "ID",
+    "code": "Code",
+    "name": "Name",
+    "stock": "Stock",
+    "unitValue": "Unit Value",
+    "components": "Components",
+    "product": "Product",
+    "units": "Units",
+    "totalValue": "Total Value",
+    "rawMaterial": "Raw Material",
+    "remainingQuantity": "Remaining Quantity",
+    "search": "Search..."
+  },
+  "pages": {
+    "production": {
+      "run": "Run plan",
+      "hint": "Click “Run plan” to calculate the best production plan based on current stock.",
+      "items": "Items",
+      "remainingStock": "Remaining stock",
+      "total": "Total"
+    }
+  }
+}

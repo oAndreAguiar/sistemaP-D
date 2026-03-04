@@ -1,0 +1,54 @@
+2026-03-03 15:02:55.935717-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 19:27:01.118358-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 19:27:02.494521-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 19:32:04.833487-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT_COMPONENT" already exists; SQL statement:
+create global temporary table HTE_product_component(rn_ integer not null, id bigint, product_id bigint, quantityPerUnit bigint, rawMaterial_id bigint, primary key (rn_)) transactional [42101-240]
+2026-03-03 19:32:04.836490-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT" already exists; SQL statement:
+create global temporary table HTE_product(rn_ integer not null, unitValue numeric(15,2), id bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 19:32:04.837491-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 20:38:39.790910-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT_COMPONENT" already exists; SQL statement:
+create global temporary table HTE_product_component(rn_ integer not null, id bigint, product_id bigint, quantityPerUnit bigint, rawMaterial_id bigint, primary key (rn_)) transactional [42101-240]
+2026-03-03 20:38:39.794913-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT" already exists; SQL statement:
+create global temporary table HTE_product(rn_ integer not null, unitValue numeric(15,2), id bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 20:38:39.795914-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 20:55:15.753870-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT_COMPONENT" already exists; SQL statement:
+create global temporary table HTE_product_component(rn_ integer not null, id bigint, product_id bigint, quantityPerUnit bigint, rawMaterial_id bigint, primary key (rn_)) transactional [42101-240]
+2026-03-03 20:55:15.754871-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT" already exists; SQL statement:
+create global temporary table HTE_product(rn_ integer not null, unitValue numeric(15,2), id bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 20:55:15.755872-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 21:23:01.937508-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT_COMPONENT" already exists; SQL statement:
+create global temporary table HTE_product_component(rn_ integer not null, id bigint, product_id bigint, quantityPerUnit bigint, rawMaterial_id bigint, primary key (rn_)) transactional [42101-240]
+2026-03-03 21:23:01.941512-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT" already exists; SQL statement:
+create global temporary table HTE_product(rn_ integer not null, unitValue numeric(15,2), id bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-03 21:23:01.942513-03:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-04 15:51:48.825763-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT_COMPONENT" already exists; SQL statement:
+create global temporary table HTE_product_component(rn_ integer not null, id bigint, product_id bigint, quantityPerUnit bigint, rawMaterial_id bigint, primary key (rn_)) transactional [42101-240]
+2026-03-04 15:51:48.829766-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_PRODUCT" already exists; SQL statement:
+create global temporary table HTE_product(rn_ integer not null, unitValue numeric(15,2), id bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]
+2026-03-04 15:51:48.830768-03:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "HTE_RAW_MATERIAL" already exists; SQL statement:
+create global temporary table HTE_raw_material(rn_ integer not null, id bigint, stockQuantity bigint, code varchar(50), name varchar(120), primary key (rn_)) transactional [42101-240]

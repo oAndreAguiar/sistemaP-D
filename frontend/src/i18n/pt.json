@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "rawMaterials": "Matérias-primas",
+    "products": "Produtos",
+    "productionPlan": "Plano de produção"
+  },
+  "common": {
+    "add": "Adicionar",
+    "edit": "Editar",
+    "delete": "Excluir",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "actions": "Ações"
+  },
+  "tables": {
+    "id": "ID",
+    "code": "Código",
+    "name": "Nome",
+    "stock": "Estoque",
+    "unitValue": "Valor unitário",
+    "components": "Composição",
+    "product": "Produto",
+    "units": "Unidades",
+    "totalValue": "Valor total",
+    "rawMaterial": "Matéria-prima",
+    "remainingQuantity": "Quantidade restante",
+    "search": "Buscar..."
+  },
+  "pages": {
+    "production": {
+      "run": "Calcular plano",
+      "hint": "Clique em “Calcular plano” para sugerir o melhor plano com base no estoque atual.",
+      "items": "Itens",
+      "remainingStock": "Estoque restante",
+      "total": "Total"
+    }
+  }
+}
