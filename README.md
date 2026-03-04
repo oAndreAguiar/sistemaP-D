@@ -1,62 +1,71 @@
-# code-with-quarkus
+# Sistema P&D — Como rodar localmente
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+## Pré-requisitos
+- Java 25+
+- Node.js 20+ (testado com Node 24)
+- npm
+- Git (opcional)
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+---
 
-## Running the application in dev mode
+## 1) Rodar o Back-end (Quarkus)
+Abra um terminal na raiz do projeto:
 
-You can run your application in dev mode that enables live coding using:
+D:\Pastas\Códigos\SistemaP&D\code-with-quarkus
 
-```shell script
-./mvnw quarkus:dev
-```
+Execute:
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+.\mvnw.cmd quarkus:dev
 
-## Packaging and running the application
+Back-end:
+http://localhost:8080
 
-The application can be packaged using:
+---
 
-```shell script
-./mvnw package
-```
+## 2) Rodar o Front-end (Vue + Vite)
+Abra outro terminal e entre na pasta do front:
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+cd .\frontend
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+Instale dependências:
 
-If you want to build an _über-jar_, execute the following command:
+npm install
 
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
+Rode o front:
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+npm run dev
 
-## Creating a native executable
+Front-end:
+http://localhost:5173
 
-You can create a native executable using:
+---
 
-```shell script
-./mvnw package -Dnative
-```
+## 3) Testes (Back-end)
+Na raiz do projeto (code-with-quarkus), execute:
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
+.\mvnw.cmd test
 
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
+---
 
-You can then execute your native executable with: `./target/code-with-quarkus-1.0.0-SNAPSHOT-runner`
+## 4) Endpoints principais
+- GET  http://localhost:8080/raw-materials
+- POST http://localhost:8080/raw-materials
+- GET  http://localhost:8080/products
+- POST http://localhost:8080/products
+- POST http://localhost:8080/production/plan
 
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+---
 
-## Provided Code
+## 5) Exemplo rápido (PowerShell)
 
-### REST
+Criar matéria-prima:
+Invoke-RestMethod -Method Post -Uri "http://localhost:8080/raw-materials" -ContentType "application/json" -Body '{
+  "code": "RM-001",
+  "name": "Steel",
+  "stockQuantity": 5000
+}'
 
-Easily start your REST Web Services
+Rodar plano:
+Invoke-RestMethod -Method Post -Uri "http://localhost:8080/production/plan" -ContentType "application/json" -Body '{}'
 
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+Obs.: para o /production/plan retornar itens, cadastre matérias-primas e produtos antes.
